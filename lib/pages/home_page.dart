@@ -57,6 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             fontSize: 26,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.normal,
+                            color: AppColors.navyblue,
                           ),
                         ),
                         const SizedBox(height: 8),

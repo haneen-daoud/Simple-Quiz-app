@@ -36,7 +36,8 @@ class AnswerWidgetItem extends StatelessWidget {
                   answer.icon,
                   color: selectedAnswer == answer.text
                       ? AppColors.white
-                      : AppColors.black,
+                      : AppColors.navyblue,
+
                 ),
                 const SizedBox(
                   width: 8,
@@ -46,7 +47,7 @@ class AnswerWidgetItem extends StatelessWidget {
                   style: TextStyle(
                     color: selectedAnswer == answer.text
                         ? AppColors.white
-                        : AppColors.black,
+                        : AppColors.navyblue,
                   ),
                 ),
               ],
