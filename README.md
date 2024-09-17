@@ -37,5 +37,5 @@ Watch the video demonstration of the Quiz App in action [here](https://www.examp
 ![image](https://github.com/user-attachments/assets/7472d7f5-4fd2-4457-8bac-d9397b504f13)
 
 ### Video
-![Quiz App Vedio](https://drive.google.com/file/d/17U43Pvv0qE6wM79iHwsrhuv5d9EFaT7Y/view?usp=sharing)  
+![Quiz App Vedio](https://drive.google.com/drive/u/0/folders/1XZjfszEyWIRIpz81bqxCcnrZOvp8G80P)  
 
