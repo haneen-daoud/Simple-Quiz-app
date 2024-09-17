@@ -3,6 +3,7 @@ import 'package:quiz_app/modules/quastion_with_answer.dart';
 import 'package:quiz_app/utils/app_colors.dart';
 import 'package:quiz_app/widgets/answer_widget_item.dart';
 import 'package:quiz_app/widgets/congrats_widget.dart';
+import 'package:quiz_app/widgets/main_button.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -14,10 +15,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int quastionIndex = 0;
   bool isFinished = false;
+  int quastionIndex = 0;
   int score = 0;
   String selectedAnswer = '';
+  bool isclick=false;
 
   //we made a widget to reduce the duplication in code and enhance performance haneen
   Widget answerButton({required String text, required VoidCallback onPressed}) {
@@ -68,8 +70,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       const SizedBox(
                         height: 8,
                       ),
+                      Text('step ${quastionIndex+1} to ${quastionWithAnswers.length}'),
                       Column(
-                        children: quastionWithAnswers[quastionIndex]
+                        children:
+                         quastionWithAnswers[quastionIndex]
                             .answers
                             .map((answer) => AnswerWidgetItem(
                                 answer: answer,
@@ -77,17 +81,15 @@ class _MyHomePageState extends State<MyHomePage> {
                                 onTap: () {
                                   setState(() {
                                     selectedAnswer = answer.text;
+                                    isclick=true;
                                   });
                                 }))
                             .toList(),
                       ),
                       const Spacer(),
-                      SizedBox(
-                        width: double.infinity,
-                        height: 50,
-                        child: ElevatedButton(
-                          onPressed: () {
-                            setState(() {
+                    MainButton( text :'Next',
+                    onTap:(){
+                       setState(() {
                               if (selectedAnswer ==
                                   quastionWithAnswers[quastionIndex]
                                       .correctAnswer) {
@@ -95,22 +97,36 @@ class _MyHomePageState extends State<MyHomePage> {
                               }
 
                               if (quastionIndex <
-                                  quastionWithAnswers.length - 1) {
+                                  quastionWithAnswers.length - 1 ) {
+
+
+                                if(isclick){
                                 quastionIndex++;
-                              } else {
+                                isclick=false;
+
+                                }
+                                else{
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    
+                                    const SnackBar(
+                                  content:  Text('You should select an answer before proceeding to the next question.')
+
+                                    ),
+                                    
+                                    );
+
+                                }
+                              } else{
                                 isFinished = true;
                               }
+                                
+                              
+                              
+
+
                             });
-                          },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: AppColors.black,
-                            foregroundColor: AppColors.white,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12)),
-                          ),
-                          child: const Text('Next'),
-                        ),
-                      ),
+                    
+                    }) ,
                     
                     const SizedBox(height: 8),
                     TextButton(
