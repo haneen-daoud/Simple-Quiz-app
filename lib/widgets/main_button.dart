@@ -13,7 +13,7 @@ class MainButton extends StatelessWidget {
                         child: ElevatedButton(
                           onPressed: onTap,
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: AppColors.black,
+                            backgroundColor: const Color.fromARGB(255, 26, 5, 59),
                             foregroundColor: AppColors.white,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12)),

@@ -25,7 +25,7 @@ class Answer {
 }
     List<QuastionWithAnswer> quastionWithAnswers = [
       QuastionWithAnswer(
-        quastion: 'Quastion1: what is your favourite color ?',
+        quastion: ' what is your favourite color ?',
         answers: [
           Answer(
             text: 'red',
@@ -38,7 +38,7 @@ class Answer {
         correctAnswer: 'red',
       ),
       QuastionWithAnswer(
-        quastion: 'Quastion2: what is your name ?',
+        quastion: ' what is your name ?',
         answers: [
           Answer(text: 'haneen', icon: Icons.add),
           Answer(text: 'sara', icon: Icons.star),
@@ -48,7 +48,7 @@ class Answer {
         correctAnswer: 'sara',
       ),
       QuastionWithAnswer(
-        quastion: 'Quastion3: where are you from ?',
+        quastion: ' where are you from ?',
         answers: [
           Answer(text: 'hebron', icon: Icons.add),
           Answer(text: 'jenin', icon: Icons.star),
