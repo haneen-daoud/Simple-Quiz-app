@@ -34,11 +34,7 @@ Watch the video demonstration of the Quiz App in action [here](https://www.examp
 *(Replace the above link with the actual link to the video)*
 
 ### Screenshot
-1-![image-1](image-1.png)
-2-![image-2](image.png)
-3-![view answer image](image-2.png)
-4-![Next whitout answer](image-3.png)
-5-![congratulations](image-4.png)
+![image](https://github.com/user-attachments/assets/7472d7f5-4fd2-4457-8bac-d9397b504f13)
 
 ### Video
 ![Quiz App Vedio](https://drive.google.com/file/d/17U43Pvv0qE6wM79iHwsrhuv5d9EFaT7Y/view?usp=sharing)  
