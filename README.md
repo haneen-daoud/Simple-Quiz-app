@@ -28,11 +28,6 @@ This **Quiz App** is an interactive trivia game that allows users to test their 
 4. Run the app using a device emulator or a physical device.
 ## Demo
 
-### Video Demonstration
-
-Watch the video demonstration of the Quiz App in action [here](https://www.example.com).  
-*(Replace the above link with the actual link to the video)*
-
 ### Screenshot
 ![image](https://github.com/user-attachments/assets/7472d7f5-4fd2-4457-8bac-d9397b504f13)
 
